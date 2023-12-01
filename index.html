@@ -9,23 +9,54 @@
         body{
             letter-spacing: 50;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+            /*transition: background-color 0.3s ease;
+            }
+
+             Light mode styles
+            body {
+            background-color: #fff;
+            color: #333;
+            }
+
+            Dark mode styles 
+            @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333;
+                color: #fff;
+            }*/
         }
+    
 
     </style>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a class="active" href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#products">PRODUCTS</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><h2>CARA</h2></li>
-            <li class="search-bar" style="float: right;">
-                <input type="text" placeholder="Search...">
-                <button type="submit">Search</button>
-            </li>
-        </ul>
+        <div class="nav-container">
+            <ul>
+                <li class="nav-item"><a class="active" href="#home">HOME</a></li>
+                <li class="nav-item"><a href="#about">ABOUT</a></li>
+                <li class="nav-item"><a href="#products">PRODUCTS</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li>CARA</li>
+                <li><img src="assests\icons8-pottery-96.png" alt="Cara logo">
+                </li>
+                <li>CARA</li>
+            </ul>
+            <ul>
+                <li class="search-bar" class="nav-item">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">
+                        <img src="assests\1200px-Google_Magnifying_Glass.svg.png" alt="Search">
+                    </button>
+                </li>
+            </ul>
+            <ul>
+                <button>CART</button>
+            </ul>
+        </div>
     </nav>
 </body>
 </html>
