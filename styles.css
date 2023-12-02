@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
+  margin-left: 50px;
+  margin-right: 100px;
 }
 
 .nav-item{
-  margin-right: none;
   list-style-type: none;
 }
 
@@ -24,6 +25,7 @@ nav div{
     padding: 0;
     overflow: hidden;
     position: sticky;
+    font-weight: 625;
   }
 
   li img{
@@ -34,6 +36,7 @@ nav div{
   ul li{
     display: flex;
     float: left;
+    
   }
    img{
     height: auto;
@@ -44,7 +47,7 @@ nav div{
     display: block;
     color: black;
     text-align: center;
-    padding: 22px 16px;
+    padding: 10px 16px;
     text-decoration: none;
   }
   
@@ -59,6 +62,7 @@ nav div{
 .search-bar input {
     padding: 8px;
     border: solid;
+    border-width: 2px;
     border-right: none;
 }
 
@@ -67,10 +71,32 @@ nav div{
   background-color: #fff;
   cursor: pointer;
   border: solid;
+  border-width: 2px;
   border-left: none;
 }
 
 .search-bar img {
   width: 15px; 
   height: 15px;
+}
+
+.cart{
+  display: flex;
+}
+.cart button {
+  border: none;
+    /* additional styling properties */
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.rule-large {
+  border-bottom: 3px solid #000;
+}
+
+.rule-small {
+  border-bottom: 1px solid #BF7631;
 }
